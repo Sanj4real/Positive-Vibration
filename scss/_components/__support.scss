@@ -1,0 +1,162 @@
+.support {
+    .support__wrap {
+        margin: 0 50px;
+        .box {
+            margin: 0 7px;
+            background: $white;
+            padding: 1.5rem 1rem;
+        }
+        .slick-arrow {
+            position: absolute;
+            z-index: 9;
+            font-size: 18px;
+            padding: 8px;
+            background: $white;
+            border: 1px solid $bg-color;
+            border-radius: 50%;
+            cursor: pointer;
+            &.la-arrow-left {
+                left: -5%;
+                top: 35%;
+            }
+            &.la-arrow-right {
+                right: -5%;
+                top: 35%;
+            }
+            &:after {
+                content: "";
+                height: 44px;
+                width: 44px;
+                border: 1px solid #ccc;
+                border-radius: 50%;
+                position: absolute;
+                top: -12%;
+                left: -5px;
+            }
+        }
+    }
+}
+
+.virtual {
+    .virtual__left {
+        .virtual__left__top {
+            padding-right: 32px;
+            h2{
+                font-weight: 500;
+            }
+            p {
+                margin: 10px 0 26px;
+            }
+        }
+        .virtual__left__bottom {
+            padding: 1.5rem;
+            border: 2px solid rgba(0, 0, 0, 0.12);
+            width: 85%;
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    margin-bottom: 12px;
+                    a {
+                        padding: 1rem;
+                        background: $blue;
+                        color: $white;
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        &:hover {
+                            background: $blue-hover;
+                        }
+                        &::before {
+                            position: absolute;
+                            right: 5%;
+                            top: auto;
+                            font-family: "Line Awesome Free";
+                            font-weight: 900;
+                            content: "\f30b";
+                            font-size: 24px;
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .virtual__right {
+        .virtual__right__block {
+            &.video {
+                position: relative;
+                margin-bottom: 30px;
+                a {
+                    .virtual--icon {
+                        position: absolute;
+                        top: 40%;
+                        left: 50%;
+                        height: 50px;
+                        width: 50px;
+                        background: rgba(0, 0, 0, 0.5);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all 0.6s ease-in-out;
+                        border-radius: 50%;
+                        i {
+                            font-size: 24px;
+                            color: $white;
+                        }
+                    }
+                    &:hover {
+                        .virtual--icon {
+                            background: rgba(0, 0, 0, 1);
+                        }
+                    }
+                }
+            }
+            &.right--bottom {
+                position: relative;
+                top: 50px;
+                left: 50px;
+                img {
+                    height: 250px;
+                    width: auto;
+                }
+                .right--bottom--img {
+                    position: absolute;
+                    top: -50px;
+                    z-index: -1;
+                    left: -50px;
+                    img {
+                        height: 100px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .right--bottom--exp {
+            position: relative;
+            background: $white;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            padding: 5%;
+            width: 55%;
+            span {
+                position: absolute;
+                top: -25%;
+                left: -8%;
+                background: #ccc;
+                height: 45px;
+                width: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
+}

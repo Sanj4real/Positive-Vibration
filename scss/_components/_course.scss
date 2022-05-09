@@ -1,0 +1,33 @@
+// course
+.course{
+    .course__block{
+        padding: 1rem 0;
+        .course__content{
+            h4{
+                font-weight: 500;
+            }
+            
+            p{
+                font-size: 16px;
+                margin: 10px 0;
+                margin-bottom: 26px;
+            }
+            .all-button{
+                padding-top: 1rem;
+                a{
+                    padding: 16px 25px;
+                }
+            }
+        }
+        .course__img{
+            &.pl{
+                padding: 15px 0;
+                padding-right: 32px;
+            }
+            &.pr{
+                padding: 15px 0;
+                padding-left: 32px;
+            }
+        }
+    }
+}

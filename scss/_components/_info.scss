@@ -1,0 +1,75 @@
+.info {
+    padding: 12px 0;
+    .info__block {
+        padding: 1.5rem 1rem;
+        a {
+            h4 {
+                font-weight: 500;
+            }
+            p {
+                margin: 10px 0 0;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+            &:hover{
+                h4{
+                    color: $blue;
+                }
+                p{
+                    color: $paragraph;
+                }
+            }
+        }
+    }
+    .col-lg-1 {
+        background: $blue;
+        .info__block__list {
+            height: 100%;
+            padding: 15px 0;
+            ul {
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                li {
+                    margin-bottom: 10px;
+                    .icon {
+                        height: 50px;
+                        width: 65px;
+                        margin: 0 auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: $white;
+                        position: relative;
+                        margin-bottom: 5px;
+                        i {
+                            display: block;
+                            font-size: 26px;
+                        }
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: -2%;
+                            background: $white;
+                            z-index: -1;
+                        }
+                    }
+                    span {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #fff;
+                        small {
+                            display: block;
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

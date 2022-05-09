@@ -1,0 +1,85 @@
+.testimonial {
+    .box{
+        padding: 0 0% 2% 2%;
+    }
+    .testimonial__block {
+        margin-top: 4rem;
+        padding: 1.5rem;
+        background: $bg-color;
+        position: relative;
+        span {
+            font-size: 32px;
+        }
+        p {
+            padding-right: 23rem;
+            padding-left: 2.5rem;
+        }
+        .testimonial__img {
+            position: absolute;
+            right: 1.5rem;
+            top: -4rem;
+            img {
+                height: auto;
+                width: 350px;
+            }
+        }
+        .testimonial__user {
+            font-size: 16px;
+            font-weight: 600;
+            padding-left: 2.5rem;
+            h5 {
+                font-weight: 600;
+            }
+            span {
+                font-size: 14px;
+                font-weight: normal;
+            }
+        }
+        .testimonial__content {
+            position: absolute;
+            left: -3%;
+            bottom: -10%;
+            height: 90px;
+            width: 100px;
+            border: 2px solid #325fb7;
+            z-index: -1;
+            border-radius: 6px;
+        }
+        .testimonial__content1 {
+            position: absolute;
+            left: -4%;
+            bottom: -13%;
+            height: 60px;
+            width: 70px;
+            border: 2px solid #325fb7;
+        }
+    }
+    .slick-arrow {
+        position: absolute;
+        z-index: 9;
+        font-size: 18px;
+        padding: 8px;
+        background: $white;
+        border: 1px solid $bg-color;
+        border-radius: 50%;
+        cursor: pointer;
+        &.la-arrow-left {
+            left: -5%;
+            top: 35%;
+        }
+        &.la-arrow-right {
+            right: -5%;
+            top: 35%;
+        }
+        &:after {
+            content: "";
+            height: 44px;
+            width: 44px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            position: absolute;
+            top: -12%;
+            left: -5px;
+        }
+    }
+}

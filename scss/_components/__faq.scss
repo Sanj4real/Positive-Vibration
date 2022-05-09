@@ -1,0 +1,92 @@
+.faq {
+    position: relative;
+    .faq__left {
+        width: 100%;
+        background: $bg-color;
+        padding: 1.5rem;
+        ul{
+            margin: 0;
+            padding: 0;
+            margin-top: 2.5rem;
+            li{
+                margin-bottom: 12px;
+                a{
+                    padding: 1rem;
+                    cursor: pointer;
+                    color: $black;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    &.active{
+                        background: $white;
+                    }
+                    span{
+                        margin-right: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .faq__right{
+        .tabcontent{
+          
+            // .card-body{
+                .accordion-item{
+                    border: 0;
+                    .accordion-button{
+                        padding: 15px;
+                        font-weight: 500;
+                        color: $black;
+                        font-size: 18px;
+                        &:not(.collapsed){
+                            color: $black;
+                            border: 1px solid #deeaf2;
+                            box-shadow: none;
+                            transition: all .6s ease-in-out;
+                            &::after{
+                                filter: grayscale(1);
+                            }
+                        }
+                        &::after{
+                            height: 1rem;
+                            width: 1rem;
+                            background-size: 1rem;
+                        }
+                        &:focus{
+                            border-color: none;
+                        }
+                    }
+                    .accordion-collapse{
+                        &.show{
+                            background-color: #fff;
+                        }
+                    }
+                }
+            // }
+        }
+    }
+}
+
+.accordion-item{
+    border: 0;
+    border-left: 1px solid rgba(0,0,0,.12);
+    border-right: 1px solid rgba(0,0,0,.12);
+    p{
+        margin: 0;
+    }
+}
+.accordion-button{
+    background: $bg-color;
+    color: $black;
+    padding: 1rem;
+    border-color: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    &:focus{
+        box-shadow: none;
+    }
+    &::after{
+        width: 1.025rem;
+        height: 1.025rem;
+    }
+}
